@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Almar Medical Solutions</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="contact-form">
+                    <form>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPJ-kRj1fgVBC7OsYZZ3Apd_lMxNrJbP24GnBX_0rmkOWfsw/viewform?embedded=true" width="640" height="1086" frameborder="0" marginheight="10" marginwidth="0">Cargando…</iframe>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="main-part">
+                <div class="container">
+                    <div class="d-flex justify-content-between text-uppercase">
+                        <div> <a href="index.html" class="text-uppercase">ALMAR</a></div>
+                      
+                        <ul>
+                            <li><a >Siguenos</a></li>
+
+                            <li><a href="https://www.facebook.com/AlmarMedicalSolutions/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/almar_medical_solutions/?igshid=1o6vdkdiomrxy"><i class="fab fa-instagram"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>administracion@almarms.com, Contacto: (506) 8720 7762</p>
+            </div>
+        </footer>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                $('.navbar ul.navbar-nav li.search a').on('click', function () {
+                    $(this).siblings('form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a, footer ul.main-list li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+        </script>
+    </body>
+</html>
