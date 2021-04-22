@@ -763,7 +763,7 @@ footer .copyright p {
         display: none;
     }
     .services .item {
-        background-color: #2c73e8;
+        background-color:  rgb(106, 190, 176);
         color: white;
     }
     .services .item a, .services .item a:hover{
@@ -842,7 +842,7 @@ footer .copyright p {
     }
 
     header .row > div:last-of-type {
-       background-image: url('../imgs/header.jpg');
+       background-image: url('../imgs/Tijeras.jpg');
        background-size: cover;
        height: 350px;
        width: 100%;
