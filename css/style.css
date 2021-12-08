@@ -307,8 +307,8 @@ header .row > div:last-of-type button a {
 }
 
 .services .rectangle {
-    width: 1700px;
-    height: 795px;
+    width: 1784px;
+    height: 1048px;
     position: absolute;
     transform: rotate(-4deg);
     z-index: -1; 
